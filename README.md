@@ -13,18 +13,21 @@ This project is a **FastAPI-based** trading strategy application that stores sto
 
 ## 📂 Project Structure
 ```
-fastapi_trading_strategy/
-│── app/
-│   ├── main.py           # FastAPI application
-│   ├── database.py       # Database connection
-│   ├── models.py         # SQLAlchemy models
-│   ├── schemas.py        # Pydantic schemas
-│   ├── strategy.py       # Trading strategy logic
-│   ├── test_main.py      # Unit tests
-│── Dockerfile            # Docker setup
-│── docker-compose.yml    # Docker Compose setup
-│── requirements.txt      # Dependencies
-│── README.md             # Project documentation
+FASTAPI_TRADING_STRATEGY/
+│── __pycache__/             # Compiled Python files
+│── venv/                    # Virtual environment (dependencies)
+│── .coverage                # Coverage report for tests
+│── .env                     # Environment variables (database credentials, etc.)
+│── database.py               # Database connection and session management
+│── docker-compose.yml        # Docker configuration file
+│── Dockerfile                # Docker build file for containerization
+│── main.py                   # Main FastAPI application
+│── models.py                 # SQLAlchemy models (database schema)
+│── requirements.txt           # List of dependencies for the project
+│── schemas.py                 # Pydantic models for request validation
+│── strategy.py                # Trading strategy implementation (Moving Averages)
+│── test_main.py               # Unit tests for API and logic
+
 ```
 
 ---
